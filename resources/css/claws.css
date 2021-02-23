@@ -1,195 +1,92 @@
 html, body {
     font-size: 16px;
-    background-color: #F2CDF0;
-    height: 100%;
+    background-color: white;
+    height: auto;
+    width: auto;
 }
 
-body {
-    background-image: url('https://images.unsplash.com/photo-1518821703881-9da5a9f42038?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
-    background-size: cover;
-    background-position: center center;
-    
+/*banner*/
+.header-line {
+    display: inline-block;
+    border: 3px solid rgb(109, 49, 59);
+    border-width: 100%;
+    width: 100%;
+    height: 60%;
+    position: center;
+    padding: auto;
+    margin: auto;
+    background-color: rgb(255, 246, 246);
 }
-
-.container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   align-content: center;
-   width: 1400px;
-}
-
-.container-display {
-    padding: 5px;
-    flex-shrink: 2;
-    justify-content: center;
-}
-
-.artist {
-    flex-grow: 1;
-}
-
-hr {
-    width: 50%;
-}
-
-h2 {
-    color: hsl(178, 100%, 50%);
-    text-align: center;
-}
-
-p {
-    font-size: 1.5rem;
+ .header-line h1 {
+    color: #020000;
     font-family: 'Markazi';
-    font-style: italic;
-    text-align: center;
-    color: white;
-}
-
-/*header*/
-
- h1 {
-    color: #77FFFB;
-    font-family: 'lemonada';
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     text-align: center;
 }
-
-header {
-    border: 3px solid pink;
-    border-radius: 60%;
-    border-width: 80%;
-    padding: 50px;
-    margin: 20px 10px;
-    background-color: yellow;
-}
-
 #nav a {
-    display: inline;
     text-decoration-line: none;
     padding: 10px;
     font-size: 1.5rem;
     text-align: center;
     transition-property: background-color;
     transition-duration: 100ms;
+    float: right;
 }
-
 #nav ul {
     text-align: center;
 }
-
 #nav li {
     display: inline;
     transition-property: color;
     transition-duration: 100ms;
 }
-
 #nav a:hover {
-    background-color: pink;
+    background-color: #edfffb;
     
 }
 
-
-
-/*Introduction*/
-
-.introduction h2 {
-    color: rgb(0, 255, 200);
-    font-family: "Lemonada", Georgia, serif;
+/*boss ladies intro*/
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   height: 700px;
 }
-
-.introduction p {
-    font-style: bold;
+.inner-speech {
+    width: 70%;
+    height: 50%;
+    padding: auto;
+    margin: 5px;
+    background-color: #cafaea;
 }
-
-span {
-    font-style: bold;
-    font-size: 3rem;
-    color: yellow;
+#speech h1 {
+    font-family: 'Dancing';
+    font-size: 3.5rem;
+    margin: 10px 15px;
+    text-align: left;
 }
-
-/*Shirts*/
-
-.shirt-container {
-    background-image: url("https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+#speech h2 {
+    font-family: 'lemonada';
+    font-size: 1.4rem;
+    margin: 75px 15px;
 }
-
-.little-shirt {
-    padding: 5px;
-    flex-basis: 150px;
-}
-
-
-/*skirts*/
-
-
-.skirt-container {
-    background-image: url('https://images.pexels.com/photos/931007/pexels-photo-931007.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 200px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.little-skirt {
-    padding: 5px;
-}
-
-/*necklaces*/
-
-.neck-container {
-    background-image: url('https://images.pexels.com/photos/4884818/pexels-photo-4884818.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-height: 500px;
-    min-width: 200px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.little-neck {
-    padding: 5px;
-    height: auto;
+img.large {
     width: auto;
+    height: 95%;
+    margin: 5px;
+    float: left;
 }
 
-/*hats*/
-
-/*bullshit*/
-
-.paris {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+/*picture display*/
+img.mid {
+    width: auto;
+    height: auto;
 }
 
-
-/*footer*/
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 2px;
-    min-height: 20px;
+/*screen size*/
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
 }
-
-.pin span{
-    font-size: 1rem;
-}
-
-
-
-
