@@ -1,27 +1,26 @@
-html, body {
+body {
     font-size: 16px;
-    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    padding-top: 0px;
-}
+
 
 /*banner*/
-.header-line {
+header {
     display: inline-block;
     width: 100%;
     height: auto;
     position: fixed;
     background-color: rgb(255, 246, 246);
 }
- .header-line h1 {
+header h1 {
     color: #020000;
     font-family: 'Markazi';
     font-size: 2.5rem;
     text-align: center;
 }
-#nav a {
+nav a {
     text-decoration-line: none;
     padding: 10px;
     font-size: 1.5rem;
@@ -31,15 +30,15 @@ body{
     float: right;
     overflow: hidden;
 }
-#nav ul {
+nav ul {
     text-align: center;
 }
-#nav li {
+nav li {
     display: inline;
     transition-property: color;
     transition-duration: 100ms;
 }
-#nav a:hover {
+nav a:hover {
     background-color: #edfffb;
     
 }
@@ -50,6 +49,7 @@ body{
    flex-wrap: wrap;
    width: 100%;
    height: 700px;
+   background-color: blue;
 }
 .inner-speech {
     width: 70%;
