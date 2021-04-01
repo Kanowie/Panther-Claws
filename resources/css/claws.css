@@ -50,8 +50,8 @@ nav a:hover {
    height: 850px;
 }
 .inner-container{
-    width: 40%;
-    height: 80%;
+    width: 30%;
+    height: 75%;
     padding: 30px;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/josiesunshine.jpg");
     background-size: cover;
@@ -62,6 +62,17 @@ nav a:hover {
     color: #fff;
     font-size: 2vw;
 }
+#circText{
+    position: relative;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+}
+#circText span{
+   position: absolute;
+   transform-origin: top left;
+}
+
 /*picture display*/
 img.large {
     width: auto;
@@ -73,9 +84,14 @@ img.mid {
 }
 
 /*screen size*/
-@media screen and (max-width: 80%) {
+@media screen and (max-width: 80%){
   .navbar a {
     float: none;
     width: 100%;
   }
+}
+@media screen and (min-width: 20%){
+    #circText span{
+        padding: 10px;
+    }
 }
