@@ -1,11 +1,11 @@
 let bodyElement = document.querySelector('body');
-bodyElement.style.backgroundColor = 'white';
+
 
 /*curving the letters over the image*/
 const angleToRadian = (angle) => {
     return angle * (Math.PI / 180);
 };
-const radius = 150;
+const radius = 200;
 const diameter = radius * 2;
 
 const circle = document.querySelector('#circText');

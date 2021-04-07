@@ -6,7 +6,7 @@ body {
 
 /*banner*/
 header {
-    width: 100%;
+    width: 99.5%;
     height: 140px;
     position: fixed;
     border-style: solid;
@@ -42,20 +42,37 @@ nav a:hover {
 }
 
 /*boss ladies intro*/
-main{
+.container{
     position: absolute;
-    width: 100%;
+    width: 99.5%;
     height: 750px;
     margin-top: 150px;
-    background-color: black;
+    background-color: rgb(146, 239, 252);
 }
-.inner-container{
-    width: 30%;
+.grid{
+    display: grid;
+    grid-template:  9fr 1fr /  1.5fr 2fr;
+}
+.box {
+  position: relative;
+  color: black;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/josiesunshine.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-b{
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}
+.josieSun{
+    width: auto;
     height: 75%;
     padding: 30px;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/josiesunshine.jpg");
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,13 +81,18 @@ main{
 }
 #circText{
     position: relative;
+    padding: 5px;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 100%;
     box-shadow: 0 0 30px rgba(0,0,0,0.15);
 }
 #circText span{
    position: absolute;
    transform-origin: top left;
+}
+h3{
+    text-align: right;
+    padding-bottom: 50%;
 }
 
 
