@@ -1,5 +1,3 @@
-let bodyElement = document.querySelector('body');
-
 
 /*curving the letters over the image*/
 const angleToRadian = (angle) => {
