@@ -6,29 +6,41 @@ body {
 
 
 /*banner*/
-header {
+.cont-header {
+    display: block;
     width: 99.5%;
-    height: 140px;
+    height: 120px;
     position: fixed;
-    border-style: solid;
     margin: 0 auto;
     z-index: 99;
     background-color: rgb(255, 246, 246);
 }
-header h1 {
+.claws {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    padding-top: 0px;
+    width: 15%;
+
+}
+.claws h1 {
     color: #020000;
-    font-family: 'Markazi';
-    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    font-size: 2.3em;
     text-align: center;
+    align-items: baseline;
+}
+.nami-nav{
+    display: inline;
+    float: right;
+    padding-top:60px;
+
 }
 nav a {
     text-decoration-line: none;
     padding: 10px;
     font-size: 1.5rem;
-    text-align: center;
     transition-duration: 100ms;
-    float: right;
-    overflow: hidden;
 }
 nav ul {
     text-align: center;
@@ -50,8 +62,8 @@ nav a:hover {
     margin-top: 165px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     grid-auto-rows: minmax(100px, auto);
+    padding: 5px;
 }
 .box {
   grid-column: 1;
@@ -71,7 +83,7 @@ nav a:hover {
 .newBox{
   height: 400px;
   position: relative;
-  background-color: rgb(224, 222, 222);
+  background-color: rgb(195, 195, 197);
   color: white;
   display: flex;
   align-items: center;
@@ -137,14 +149,14 @@ img.mid {
 /*footer*/
 
 /*screen size*/
-@media screen and (max-width: 80%){
+@media screen and (max-width: 600px){
   .navbar a {
     float: none;
     width: 100%;
   }
 }
-@media screen and (min-width: 20%){
-    #circText span{
-        padding: 10px;
+@media screen and (min-width: 200px){
+    body {
+        width: 200px;
     }
 }
