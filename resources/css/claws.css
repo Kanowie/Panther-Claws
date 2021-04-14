@@ -147,6 +147,20 @@ img.mid {
     height: 80%;
 }
 /*footer*/
+footer{
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+#contact-me{
+color: white;
+width: auto;
+height: auto;
+}
 
 /*screen size*/
 @media screen and (max-width: 600px){
