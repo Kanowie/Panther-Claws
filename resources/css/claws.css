@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
     display: flex;
+    background: linear-gradient(250deg, rgb(83, 83, 83),rgb(51, 53, 53));
 }
 
 
@@ -13,7 +14,9 @@ body {
     position: fixed;
     margin: 0 auto;
     z-index: 99;
-    background-color: rgb(255, 246, 246);
+    background-color: rgb(27, 27, 27);
+    background: linear-gradient(175deg, rgb(221, 220, 220), rgb(98, 99, 99));
+    border:solid rgb(255, 255, 255) 2px;
 }
 .claws {
     display: inline;
@@ -24,11 +27,10 @@ body {
 
 }
 .claws h1 {
-    color: #020000;
-    font-family: 'Lobster', cursive;
+    color: #ffffff;
+    font-family: 'Lobster';
     font-size: 2.3em;
     text-align: center;
-    align-items: baseline;
 }
 .nami-nav{
     display: inline;
@@ -40,6 +42,7 @@ nav a {
     text-decoration-line: none;
     padding: 10px;
     font-size: 1.5rem;
+    color: #ffffff;
     transition-duration: 100ms;
 }
 nav ul {
@@ -51,7 +54,7 @@ nav li {
     transition-duration: 100ms;
 }
 nav a:hover {
-    background-color: #edfffb;
+    background-color: #e7acac;
 }
 
 /*boss ladies intro*/
@@ -64,6 +67,8 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
     padding: 5px;
+    background: linear-gradient(175deg, rgb(230, 230, 230), rgb(83, 87, 87));
+    border: solid #ffffff 2px;
 }
 .box {
   grid-column: 1;
@@ -74,7 +79,7 @@ nav a:hover {
   height:100%;
   margin-left: 50px;
   color: black;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/josiesunshine.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/josiesunshine.jpg");
   background-position: center;
   background-repeat: no-repeat;
   align-items: center;
@@ -83,8 +88,7 @@ nav a:hover {
 .newBox{
   height: 400px;
   position: relative;
-  background-color: rgb(195, 195, 197);
-  color: white;
+  background: linear-gradient(150deg, rgb(56, 54, 54), rgb(49, 49, 49));
   display: flex;
   align-items: center;
   justify-content: center
@@ -100,8 +104,8 @@ nav a:hover {
 button{
     width: 400px;
     height: 100px;
-    border-radius: 2px;
-    background-color: #333;
+    border:solid #fff 3px;
+    background-color: rgb(51, 51, 51);
     color:#fff;
     font-size: 2em;
 }
@@ -109,7 +113,7 @@ button{
     margin-left: 300px;
 }
 button:hover{
-    background: rgb(116, 114, 114);
+    background: #e7acac;
 }
 
 #circText{
@@ -124,6 +128,7 @@ button:hover{
     align-items: center;
     justify-content: center;
     display: flex;
+    border-radius: 100%;
 }
 #circText span{
    position: absolute;
@@ -148,18 +153,21 @@ img.mid {
 }
 /*footer*/
 footer{
-    background-color: black;
-    color: #fff;
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 50px;
 }
+.social-foot{
+    width: 10%;
+    padding:10px 5px 10px 15px;
+}
 #contact-me{
 color: white;
-width: auto;
-height: auto;
+padding: 5px; 
 }
 
 /*screen size*/
@@ -170,7 +178,7 @@ height: auto;
   }
 }
 @media screen and (min-width: 200px){
-    body {
-        width: 200px;
+    .josieSun {
+        
     }
 }

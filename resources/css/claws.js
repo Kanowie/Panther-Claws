@@ -1,4 +1,3 @@
-
 /*curving the letters over the image*/
 const angleToRadian = (angle) => {
     return angle * (Math.PI / 180);
