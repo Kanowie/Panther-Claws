@@ -55,7 +55,7 @@ nav li {
     transition-duration: 100ms;
 }
 nav a:hover {
-    background-color: #e7acac;
+    background: rgb(190, 116, 219);
 }
 
 /*boss ladies intro*/
@@ -110,7 +110,7 @@ button{
     margin-left: 300px;
 }
 button:hover{
-    background: rgb(190, 116, 219);;
+    background: rgb(190, 116, 219);
 }
 
 #circText{
@@ -168,10 +168,10 @@ padding: 5px;
 }
 
 /*screen size*/
-@media only screen and (max-width:800px) {
+@media only screen and (max-device-width:800px) {
   /* For tablets: */
   .main {
-    width: 80%;
+    width: 100%;
     padding: 0;
   }
   .josieSun {
@@ -180,10 +180,13 @@ padding: 5px;
   .container {
       width: 100%;
   }
-}
-@media only screen and (max-width:500px) {
+  .newBox {
+      width: 100%;
+  }
+};
+@media only screen and (max-device-width:500px) {
   /* For mobile phones: */
   .newBox, .main, .container {
     max-width: 100%;
   }
-}
+};
